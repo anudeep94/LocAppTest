@@ -14,6 +14,7 @@
 		84F553871D1939AF008468DD /* LocationAppDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F553851D1939AF008468DD /* LocationAppDemo.xcdatamodeld */; };
 		84F553891D1939AF008468DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F553881D1939AF008468DD /* Assets.xcassets */; };
 		84F5538C1D1939AF008468DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F5538A1D1939AF008468DD /* LaunchScreen.storyboard */; };
+		84F553941D1942B0008468DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F553931D1942B0008468DD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84F553881D1939AF008468DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F5538B1D1939AF008468DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F5538D1D1939AF008468DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F553931D1942B0008468DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F553941D1942B0008468DD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		84F5536D1D1939AF008468DD = {
 			isa = PBXGroup;
 			children = (
+				84F553931D1942B0008468DD /* CoreLocation.framework */,
 				84F553781D1939AF008468DD /* LocationAppDemo */,
 				84F553771D1939AF008468DD /* Products */,
 			);
@@ -268,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationAppDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pytenlabs.LocationAppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationAppDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pytenlabs.LocationAppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
