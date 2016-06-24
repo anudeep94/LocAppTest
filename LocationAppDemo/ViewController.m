@@ -82,6 +82,10 @@
         _latitudeField.text = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
     }
     
+    //Stop Updation of Location
+    [locationManager stopUpdatingLocation];
+    
+    
     NSLog(@"Resolving the Address");
     [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
         NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
